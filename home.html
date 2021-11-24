@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Happy Birthday!!</title>
+</head>
+<body>
+  <a href="demo.html"><img src="assets/heart1.png" id="click-me"></a>
+  <script>
+    document.getElementById("click-me").setAttribute("onmouseover", "changeTransform(1)");
+    function changeTransform(n){
+      if(n == 1){
+        document.getElementById('click-me').style.transform = 'translate(20%, 80%)';
+        document.getElementById('click-me').src = "assets/heart2.png";
+        document.getElementById("click-me").setAttribute("onmouseover", "changeTransform(2)");
+        document.getElementById('click-me').style.height = '200px';
+      }
+      else if(n == 2){
+        document.getElementById('click-me').style.transform = 'translate(400%, 180%)';
+        document.getElementById('click-me').src = "assets/heart3.png";
+        document.getElementById("click-me").setAttribute("onmouseover", "changeTransform(3)");
+
+      }
+      else if(n == 3){
+        document.getElementById('click-me').style.transform = 'translate(600%, 280%)';
+        document.getElementById('click-me').src = "assets/heart4.png";
+        document.getElementById("click-me").setAttribute("onmouseover", "changeTransform(4)");
+
+      }
+      else if(n == 4){
+        document.getElementById('click-me').style.transform = 'translate(620%, 10%)';
+        document.getElementById('click-me').src = "assets/heart5.png";
+        document.getElementById("click-me").setAttribute("onmouseover", "changeTransform(5)");
+
+      }
+      else if(n == 5){
+        document.getElementById('click-me').style.transform = 'translate(20%, 280%)';
+        document.getElementById('click-me').src = "assets/heart6.png";
+        document.getElementById("click-me").setAttribute("onmouseover", "changeTransform(6)");
+
+      }
+      else if(n == 6){
+        document.getElementById('click-me').style.transform = 'translate(330%, 150%)';
+        document.getElementById('click-me').src = "assets/heart7.png";
+        document.getElementById("click-me").setAttribute("onmouseover", "changeTransform(7)");
+      }
+    }
+  </script>
+</body>
+</html>

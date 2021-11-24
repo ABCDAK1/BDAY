@@ -1,0 +1,12 @@
+body{
+  background: url("assets/bg1.png");
+  background-size: cover;
+}
+
+#click-me{
+  transform: translate(330%, 50%);
+}
+
+#click-me:hover{
+  cursor: pointer;
+}
